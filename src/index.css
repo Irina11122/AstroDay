@@ -2866,3 +2866,171 @@ a {
   justify-content: center;
   gap: 50px;
 }
+
+/* =========================
+   PHOTO DETAILS - MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .photo-details {
+    padding: 70px 20px 50px;
+  }
+
+  /* IMAGE + TEXT */
+
+  .details-hero {
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 45px;
+
+    align-items: stretch;
+  }
+
+  /* PHOTO */
+
+  .details-image {
+    width: 100%;
+    height: 65vh;
+
+    min-height: 450px;
+    max-height: 650px;
+
+    overflow: hidden;
+  }
+
+  .details-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+  }
+
+  /* TEXT */
+
+  .details-info {
+    width: 100%;
+  }
+
+  .details-info .eyebrow {
+    font-size: 10px;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+  }
+
+  .details-info h1 {
+    font-size: clamp(45px, 14vw, 75px);
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    margin: 0 0 20px;
+
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  .photographer {
+    font-size: 16px;
+    color: #999;
+
+    margin-bottom: 0;
+  }
+
+  /* META INFORMATION */
+
+  .details-meta {
+    margin-top: 45px;
+
+    padding-top: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    border-top: 1px solid #333;
+  }
+
+  .details-meta div {
+    gap: 8px;
+
+    min-width: 0;
+  }
+
+  .details-meta span {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #666;
+  }
+
+  .details-meta strong {
+    font-size: 13px;
+
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    overflow-wrap: break-word;
+  }
+
+  /* STORY */
+
+  .photo-story {
+    width: 100%;
+
+    margin: 100px auto 80px;
+  }
+
+  .photo-story .eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+  }
+
+  .story-text {
+    font-size: clamp(27px, 8vw, 42px);
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+
+    margin-top: 0;
+  }
+
+  /* BACK */
+
+  .back-link {
+    padding-top: 20px;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .details-image {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+    background: #000;
+  }
+
+  .details-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+}
