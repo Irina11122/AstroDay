@@ -87,6 +87,20 @@ export default function Contact() {
 
             <span className="social-arrow">↗</span>
           </a>
+
+          <a
+            href="mailto:praxis@praxisgreece.com"
+            className="social-card email"
+          >
+            <span className="social-icon">@</span>
+
+            <div>
+              <small>EMAIL</small>
+              <h3>praxis@praxisgreece.com</h3>
+            </div>
+
+            <span className="social-arrow">↗</span>
+          </a>
         </div>
       </section>
 

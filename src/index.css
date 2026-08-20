@@ -164,11 +164,10 @@ a {
 .navbar {
   height: 80px;
   padding: 0 6vw;
-
+  background-color: #020207;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   border-bottom: 1px solid #222;
 }
 
@@ -3044,6 +3043,9 @@ a {
   text-decoration: none;
 }
 
+.navbar-partners {
+  color: #fff;
+}
 .navbar-logo h1 {
   margin: 0;
 }
@@ -3177,5 +3179,286 @@ a {
 
   .hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+.praxis-img {
+  height: 50px;
+}
+
+.club-page {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+}
+
+/* HERO */
+
+.club-hero {
+  min-height: 80vh;
+  padding: 120px 8%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.club-hero-content {
+  max-width: 900px;
+}
+
+.club-hero-content h1 {
+  font-size: clamp(4rem, 9vw, 9rem);
+  line-height: 0.85;
+  font-weight: 400;
+  margin: 30px 0 45px;
+}
+
+.club-hero-content > p:last-child {
+  max-width: 550px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+/* ABOUT */
+
+.club-about {
+  padding: 140px 8%;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  gap: 80px;
+}
+
+.club-about-label p {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  opacity: 0.5;
+}
+
+.club-about-content {
+  max-width: 850px;
+}
+
+.club-about-content h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  font-weight: 400;
+  margin-bottom: 55px;
+}
+
+.club-about-content p {
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+/* AREAS */
+
+.club-areas {
+  padding: 140px 8%;
+}
+
+.club-areas-header {
+  margin-bottom: 80px;
+}
+
+.club-areas-header h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  font-weight: 400;
+  margin-top: 25px;
+}
+
+.club-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.club-area-card {
+  min-height: 280px;
+  padding: 35px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.club-area-card:hover {
+  transform: translateY(-5px);
+}
+
+.club-area-card span {
+  font-size: 0.7rem;
+  opacity: 0.45;
+}
+
+.club-area-card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 60px 0 20px;
+}
+
+.club-area-card p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  opacity: 0.6;
+}
+
+/* YOUTH */
+
+.club-youth {
+  padding: 140px 8%;
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.club-youth-number {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.club-youth-number span {
+  font-size: clamp(5rem, 10vw, 10rem);
+  font-weight: 300;
+}
+
+.club-youth-number p {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+}
+
+.club-youth-text h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  font-weight: 400;
+  margin: 30px 0 45px;
+}
+
+.club-youth-text > p:not(.home-section-label) {
+  max-width: 700px;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+/* ASTROGRAVIA */
+
+.club-astrogravia {
+  padding: 140px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.club-astrogravia h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.95;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.club-astrogravia-text {
+  align-self: end;
+}
+
+.club-astrogravia-text p {
+  max-width: 600px;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+
+.club-astrogravia-text a {
+  display: inline-block;
+  margin-top: 30px;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+}
+
+/* CONTACT */
+
+.club-contact {
+  padding: 120px 8%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.club-contact img {
+  width: 220px;
+  max-width: 70%;
+  margin-bottom: 30px;
+}
+
+.club-contact p {
+  line-height: 1.7;
+  opacity: 0.6;
+}
+
+.club-contact a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.club-contact a:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .club-about,
+  .club-youth,
+  .club-astrogravia {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .club-areas-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .club-hero {
+    min-height: 70vh;
+    padding: 90px 7%;
+  }
+
+  .club-about,
+  .club-areas,
+  .club-youth,
+  .club-astrogravia {
+    padding: 90px 7%;
+  }
+
+  .club-areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .club-area-card {
+    min-height: 240px;
+  }
+
+  .club-youth-number {
+    min-height: 250px;
   }
 }

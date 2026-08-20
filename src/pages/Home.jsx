@@ -50,32 +50,54 @@ export default function Home() {
 
       <section className="home-game">
         <div className="home-game-text">
-          <p className="home-section-label">ASTROGRAVIA GAME</p>
+          <p className="home-section-label">ASTROGRAVIA × PRAXIS</p>
 
           <h2>
-            How much do
+            Creativity,
             <br />
-            you know about space?
+            youth & community.
           </h2>
 
           <p>
-            Test your knowledge and explore the universe through our interactive
-            Astrogravia Day game.
+            PRAXIS is a non-profit organisation based in Serres, Greece, working
+            with young people and local communities through education, culture,
+            creativity and active participation.
           </p>
 
-          <p>Scan the QR code with your phone and start your cosmic journey.</p>
+          <p>
+            Through its activities and projects, PRAXIS creates opportunities
+            for young people to learn, exchange ideas, develop new skills and
+            become active members of their communities.
+          </p>
+
+          <p>
+            Its work connects people from different backgrounds and encourages
+            creativity, collaboration and intercultural dialogue.
+          </p>
+
+          <p>
+            Astrogravia Day reflects this approach by bringing together
+            photography, astronomy, science and creativity in one shared
+            experience.
+          </p>
+
+          <p>
+            Through the lens, we are invited to look beyond what we already
+            know, explore the universe and discover new ways of seeing the world
+            around us.
+          </p>
         </div>
         <div className="home-qr">
           <div className="qr-container">
-            <img
-              src="/images/qr-game.png"
-              alt="QR code for Astrogravia Day game"
-            />
+            <img src="../../public/praxis logo.png" alt="logo" />
           </div>
 
-          <h3>SCAN TO PLAY</h3>
+          <div className="home-praxis-number">
+            <span>01</span>
+            <p>YOUTH • CULTURE • CREATIVITY</p>
+          </div>
 
-          <p>Point your camera at the QR code</p>
+          <p>Praxis Organisation</p>
         </div>{' '}
         <section className="home-discover">
           <div className="home-discover-header">

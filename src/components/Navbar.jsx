@@ -1,42 +1,32 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="container">
-      <Link to="/" className="navbar-logo">
-        <h1 className="megrim-regular">AstroWorld</h1>
-      </Link>
-
-      <button
-        className={`hamburger ${menuOpen ? 'active' : ''}`}
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Open menu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav className={`navbar__nav ${menuOpen ? 'open' : ''}`}>
-        <Link to="/" onClick={() => setMenuOpen(false)}>
-          HOME
+    <header className="navbar">
+      <img src="/praxis logo.png" alt="PRAXIS Greece" className="praxis-img" />
+      <div className="navbar-brand">
+        <Link to="/" className="astrogravia-logo">
+          ASTROGRAVIA
         </Link>
-
-        <Link to="/photo" onClick={() => setMenuOpen(false)}>
-          PHOTOGRAPHY
-        </Link>
-
-        <Link to="/universe" onClick={() => setMenuOpen(false)}>
-          UNIVERSE
-        </Link>
-
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>
-          CONTACT
-        </Link>
+      </div>
+      <nav className="navbar__nav">
+        <Link to="/">HOME</Link>
+        <Link to="/photo">PHOTOGRAPHY</Link>
+        <Link to="/universe">UNIVERSE</Link>
+        <Link to="/gallery">GALLERY</Link>
+        <Link to="/contact">CONTACT</Link>
+        <Link to="/club-serres-unesco">UNESCO</Link>
       </nav>
+      <div className="navbar-partners">
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=praxis@praxisgreece.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="navbar-email"
+        >
+          praxis@praxisgreece.com
+        </a>
+      </div>
     </header>
   );
 }

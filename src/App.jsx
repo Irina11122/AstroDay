@@ -11,6 +11,7 @@ import Galaxies from './pages/Galaxies';
 import Stars from './pages/Stars';
 import Planets from './pages/Planets';
 import DeepSpace from './pages/DeepSpace';
+import ClubSerres from './pages/ClubSerres';
 export default function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/planets" element={<Planets />} />
         <Route path="/deepspace" element={<DeepSpace />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/club-serres-unesco" element={<ClubSerres />} />
       </Routes>
     </BrowserRouter>
   );

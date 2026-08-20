@@ -130,48 +130,46 @@ export const photographs = [
 
   {
     id: 12,
-    title: 'Earth from Space',
-    photographer: 'Apollo 17 / NASA',
-    year: 1972,
-    category: 'Earth',
-    image:
-      'https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg',
+    title: 'A Boat on Kerkini Lake',
+    photographer: 'Irina Bojkovska',
+    year: 2026,
+    category: 'Nature',
+    image: '../../public/irina.jpeg',
     description:
-      'The iconic Blue Marble photograph of Earth, captured by the Apollo 17 crew during their journey to the Moon in 1972.',
+      'A quiet moment on Lake Kerkini, where a small boat moves across the calm waters surrounded by the beauty of nature. The photograph captures the peaceful atmosphere of the lake and the connection between people and the landscape.',
   },
 
   {
     id: 13,
-    title: 'Webb’s First Deep Field',
-    photographer: 'NASA / ESA / CSA / STScI',
-    year: 2022,
-    category: 'Deep Space',
-    image: 'https://stsci-opo.org/STScI-01G7JGJ4Z4Q4J5H3YJQY8Z8M3C.png',
+    title: 'Looking at Cannons',
+    photographer: 'Maria Sok Khin Nazzaro',
+    year: 2026,
+    category: 'Curiosity',
+    image: '../../public/sok.jpeg',
     description:
-      'The first deep-field image from the James Webb Space Telescope, revealing thousands of distant galaxies.',
+      'A curious look at the cannons, capturing a moment of discovery and fascination with the traces of history that surround us.',
   },
 
   {
     id: 14,
-    title: 'Pillars of Creation',
-    photographer: 'NASA / ESA / CSA / STScI',
+    title: 'Neon Bar',
+    photographer: 'Faustine Yvanne Bague',
     year: 2022,
-    category: 'Nebula',
-    image:
-      'https://science.nasa.gov/wp-content/uploads/2023/09/pillars-of-creation.jpg',
+    category: 'City',
+    image: '../../public/faustine.jpeg',
     description:
-      'A spectacular James Webb Space Telescope view of the Pillars of Creation in the Eagle Nebula.',
+      'A colorful night scene of a small urban bar glowing under bright red neon lights.',
   },
 
   {
     id: 15,
-    title: 'The Falling Man',
-    photographer: 'Richard Drew',
-    year: 2001,
-    category: 'Documentary',
-    image: 'https://upload.wikimedia.org/wikipedia/en/6/6e/Falling_Man.jpg',
+    title: 'A Message on the street',
+    photographer: 'Faustine Yvanne Bague',
+    year: 2024,
+    category: 'Message',
+    image: '../../public/faustinw2.jpeg',
     description:
-      'A powerful and controversial photograph taken during the September 11 attacks in New York City.',
+      'A black and white street photograph caprturing a passerby aproaching a man holding a striking religious message.',
   },
 
   {
