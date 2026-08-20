@@ -3257,42 +3257,580 @@ a {
    NAVBAR
 ========================================= */
 
+/* =========================================================
+   NAVBAR
+========================================================= */
+
 .navbar {
   background-color: #0c0a18;
+
   width: 100%;
-  min-height: 90px;
+  min-height: 135px;
+
   padding: 0 5%;
-  display: flex;
-  align-items: center;
-  gap: 30px;
+
   position: relative;
   z-index: 1000;
+
+  display: flex;
+  align-items: center;
+
   box-sizing: border-box;
 }
 
-/* =========================================
+/* =========================================================
    PRAXIS LOGO
-========================================= */
+========================================================= */
 
 .navbar-praxis {
+  position: absolute;
+
+  left: 5%;
+  top: 22px;
+
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+
+  z-index: 2;
 }
 
-.praxis-img {
+.navbar-praxis .praxis-img {
   width: 80px;
   height: auto;
+
   display: block;
   object-fit: contain;
 }
 
-/* =========================================
-   ASTROGRAVIA
-========================================= */
+/* =========================================================
+   UNESCO LOGO
+========================================================= */
+
+.navbar-unesco {
+  position: absolute;
+
+  right: 5%;
+  top: 20px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 2;
+}
+
+.navbar-unesco .praxis-img {
+  width: 70px;
+  height: auto;
+
+  display: block;
+  object-fit: contain;
+}
+
+/* =========================================================
+   ASTROWORLD FOR PRAXIS
+========================================================= */
 
 .navbar-brand {
-  flex-shrink: 0;
+  position: absolute;
+
+  left: 50%;
+  top: 35px;
+
+  transform: translateX(-50%);
+
+  z-index: 2;
+}
+
+.astrogravia-logo {
+  color: white;
+
+  text-decoration: none;
+
+  font-family: 'Megrim', sans-serif;
+
+  font-size: 1.45rem;
+
+  letter-spacing: 0.08em;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.navbar-partners {
+  position: absolute;
+
+  right: calc(5% + 90px);
+  top: 31px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 2;
+}
+
+.navbar-email {
+  color: white;
+
+  text-decoration: none;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 0.62rem;
+
+  opacity: 0.65;
+
+  white-space: nowrap;
+
+  transition: opacity 0.3s ease;
+}
+
+.navbar-email:hover {
+  opacity: 1;
+}
+
+/* =========================================================
+   DESKTOP NAVIGATION
+   SECOND ROW
+========================================================= */
+
+.navbar__nav {
+  position: absolute;
+
+  left: 50%;
+  bottom: 18px;
+
+  transform: translateX(-50%);
+
+  width: 90%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 26px;
+
+  flex-wrap: nowrap;
+}
+
+.navbar__nav a {
+  color: white;
+
+  text-decoration: none;
+
+  font-family: 'Unica One', sans-serif;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 0.12em;
+
+  white-space: nowrap;
+
+  transition: opacity 0.3s ease;
+}
+
+.navbar__nav a:hover {
+  opacity: 0.5;
+}
+
+/* =========================================================
+   MOBILE BUTTON
+========================================================= */
+
+.mobile-menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 8px;
+  margin-left: auto;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  z-index: 1002;
+}
+
+.mobile-menu-button span {
+  display: block;
+
+  width: 25px;
+  height: 1px;
+
+  background: white;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* =========================================================
+   HAMBURGER → X
+========================================================= */
+
+.mobile-menu-button.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-button.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-nav {
+  display: none;
+}
+
+/* =========================================================
+   LAPTOP
+   801px – 1200px
+========================================================= */
+
+@media (max-width: 1200px) and (min-width: 801px) {
+  .navbar {
+    min-height: 135px;
+
+    padding: 0 25px;
+  }
+
+  /* PRAXIS */
+
+  .navbar-praxis {
+    left: 25px;
+    top: 20px;
+  }
+
+  .navbar-praxis .praxis-img {
+    width: 70px;
+  }
+
+  /* UNESCO */
+
+  .navbar-unesco {
+    right: 25px;
+    top: 18px;
+  }
+
+  .navbar-unesco .praxis-img {
+    width: 60px;
+  }
+
+  /* ASTROWORLD */
+
+  .navbar-brand {
+    top: 32px;
+  }
+
+  .astrogravia-logo {
+    font-size: 1.2rem;
+  }
+
+  /* EMAIL */
+
+  .navbar-partners {
+    display: none;
+  }
+
+  /* NAVIGATION */
+
+  .navbar__nav {
+    width: 95%;
+
+    bottom: 17px;
+
+    gap: 17px;
+  }
+
+  .navbar__nav a {
+    font-size: 0.72rem;
+
+    letter-spacing: 0.08em;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   800px AND BELOW
+========================================================= */
+
+@media (max-width: 800px) {
+  .navbar {
+    width: 100%;
+
+    height: 75px;
+    min-height: 75px;
+
+    padding: 0 20px;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(30, 29, 29, 0.95);
+
+    box-sizing: border-box;
+
+    z-index: 1000;
+  }
+
+  /* =======================================================
+     PRAXIS MOBILE
+  ======================================================= */
+
+  .navbar-praxis {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+  }
+
+  .navbar-praxis .praxis-img {
+    width: 60px;
+  }
+
+  /* =======================================================
+     UNESCO MOBILE
+  ======================================================= */
+
+  .navbar-unesco {
+    display: flex;
+
+    position: absolute;
+
+    right: 70px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    z-index: 2;
+  }
+
+  .navbar-unesco .praxis-img {
+    width: 50px;
+  }
+
+  /* =======================================================
+     ASTROWORLD MOBILE
+  ======================================================= */
+
+  .navbar-brand {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+  }
+
+  .astrogravia-logo {
+    font-size: 1rem;
+
+    white-space: nowrap;
+  }
+
+  /* =======================================================
+     HIDE DESKTOP NAV
+  ======================================================= */
+
+  .navbar__nav {
+    display: none;
+  }
+
+  /* =======================================================
+     HIDE EMAIL
+  ======================================================= */
+
+  .navbar-partners {
+    display: none;
+  }
+
+  /* =======================================================
+     HAMBURGER
+  ======================================================= */
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  /* =======================================================
+     MOBILE MENU
+  ======================================================= */
+
+  .mobile-nav {
+    position: fixed;
+
+    top: 75px;
+    left: 0;
+
+    width: 100%;
+    height: calc(100vh - 75px);
+
+    padding: 30px 25px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: rgba(3, 3, 10, 0.98);
+
+    transform: translateX(100%);
+
+    transition: transform 0.35s ease;
+
+    z-index: 1001;
+
+    overflow-y: auto;
+  }
+
+  /* OPEN MENU */
+
+  .mobile-nav.open {
+    transform: translateX(0);
+  }
+
+  /* =======================================================
+     MOBILE LINKS
+  ======================================================= */
+
+  .mobile-nav a {
+    display: block;
+
+    padding: 19px 0;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Unica One', sans-serif;
+
+    font-size: 0.95rem;
+
+    letter-spacing: 0.15em;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition:
+      opacity 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .mobile-nav a:hover {
+    opacity: 0.55;
+
+    padding-left: 8px;
+  }
+
+  /* =======================================================
+     MOBILE EMAIL
+  ======================================================= */
+
+  .mobile-nav .mobile-email {
+    margin-top: auto;
+
+    padding: 15px 0;
+
+    border-bottom: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 0.04em;
+
+    opacity: 0.55;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES
+   420px AND BELOW
+========================================================= */
+
+@media (max-width: 420px) {
+  .navbar {
+    padding: 0 16px;
+
+    height: 75px;
+    min-height: 75px;
+  }
+
+  /* PRAXIS */
+
+  .navbar-praxis .praxis-img {
+    width: 55px;
+  }
+
+  /* UNESCO */
+
+  .navbar-unesco {
+    right: 62px;
+  }
+
+  .navbar-unesco .praxis-img {
+    width: 45px;
+  }
+
+  /* ASTROWORLD */
+
+  .astrogravia-logo {
+    font-size: 0.85rem;
+  }
+
+  /* HAMBURGER */
+
+  .mobile-menu-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* MOBILE MENU */
+
+  .mobile-nav {
+    padding: 25px 25px;
+  }
+
+  .mobile-nav a {
+    font-size: 0.9rem;
+
+    padding: 17px 0;
+  }
 }
 
 .astrogravia-logo {

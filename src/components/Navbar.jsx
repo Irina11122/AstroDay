@@ -17,6 +17,13 @@ export default function Navbar() {
           className="praxis-img"
         />
       </Link>
+      <Link to="/unesco" className="navbar-unesco">
+        <img
+          src="/5c38783c-c6ce-45a1-a4a1-511c12ff9f6d.png"
+          alt="PRAXIS Greece"
+          className="praxis-img"
+        />
+      </Link>
 
       <div className="navbar-brand">
         <Link to="/" className="astrogravia-logo">
@@ -41,7 +48,7 @@ export default function Navbar() {
           CONTACT
         </Link>
         <Link to="/club-serres-unesco" onClick={closeMenu}>
-          UNESCO
+          CLUB SERRES FOR UNESCO
         </Link>
       </nav>
 

@@ -185,30 +185,74 @@ export default function ClubSerres() {
       {/* CONTACT */}
       <section className="club-contact">
         <img
-          src="/images/club-serres-unesco-logo.png"
+          src="/5c38783c-c6ce-45a1-a4a1-511c12ff9f6d.png"
           alt="Club Serres for UNESCO"
         />
+      </section>
+      <section className="social-section">
+        <div className="social-grid">
+          <a
+            href="https://www.instagram.com/club_serres_for_unesco?igsi=MWtidTNlcXc2YjJyaA=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-card instagram"
+          >
+            <span className="social-icon">◎</span>
 
-        <p>
-          Ioustinianou 19
-          <br />
-          62123 Serres, Greece
-        </p>
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=serres.for.unesco@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          serres.for.unesco@gmail.com
-        </a>
+            <div>
+              <small>INSTAGRAM</small>
+              <h3>@club.serres.for.unesco</h3>
+            </div>
 
-        <a
-          href="https://www.serresforunesco.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          VISIT OFFICIAL WEBSITE →
-        </a>
+            <span className="social-arrow">↗</span>
+          </a>
+
+          <a
+            href="https://www.facebook.com/profile.php?id=100064695128753"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-card facebook"
+          >
+            <span className="social-icon">f</span>
+
+            <div>
+              <small>FACEBOOK</small>
+              <h3>CLUB SERRES FOR UNESCO</h3>
+            </div>
+
+            <span className="social-arrow">↗</span>
+          </a>
+
+          <a
+            href="https://www.serresforunesco.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-card blog"
+          >
+            <span className="social-icon">✦</span>
+
+            <div>
+              <small>News & Stories</small>
+              <h3>WEBSITE</h3>
+            </div>
+
+            <span className="social-arrow">↗</span>
+          </a>
+
+          <a
+            href="mailto:mailto:serres.for.unesco@gmail.com"
+            className="social-card email"
+          >
+            <span className="social-icon">@</span>
+
+            <div>
+              <small>EMAIL</small>
+              <h3>serres.for.unesco@gmail.com</h3>
+            </div>
+
+            <span className="social-arrow">↗</span>
+          </a>
+        </div>
       </section>
     </main>
   );
