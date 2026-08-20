@@ -89,7 +89,7 @@ export default function Home() {
         </div>
         <div className="home-qr">
           <div className="qr-container">
-            <img src="/praxis logo.png" alt="logo" />
+            <img src="/praxis-logo.png" alt="logo" />
           </div>
 
           <div className="home-praxis-number">
