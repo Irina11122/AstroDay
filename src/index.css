@@ -20,18 +20,6 @@ body {
   margin: auto;
 }
 
-.navbar__nav {
-  display: flex;
-  gap: 20px;
-  font-size: 20px;
-  align-items: center;
-
-  & a {
-    color: white;
-    text-decoration: none;
-  }
-}
-
 .home-page {
   h1 {
     color: white;
@@ -157,35 +145,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-/* NAVBAR */
-
-.navbar {
-  height: 80px;
-  padding: 0 6vw;
-  background-color: #020207;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #222;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 4px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 40px;
-}
-
-.nav-links a {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 /* HERO */
@@ -3017,175 +2976,6 @@ a {
   }
 }
 
-@media (max-width: 768px) {
-  .details-image {
-    width: 100%;
-    height: auto;
-    max-height: none;
-    overflow: visible;
-    background: #000;
-  }
-
-  .details-image img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-  }
-}
-
-/* =========================
-   MOBILE NAVBAR
-========================= */
-
-.navbar-logo {
-  color: white;
-  text-decoration: none;
-}
-
-.navbar-partners {
-  color: #fff;
-}
-.navbar-logo h1 {
-  margin: 0;
-}
-
-/* HAMBURGER */
-
-.hamburger {
-  display: none;
-
-  width: 42px;
-  height: 42px;
-
-  padding: 8px;
-
-  border: none;
-  background: transparent;
-
-  cursor: pointer;
-
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-
-  z-index: 100;
-}
-
-.hamburger span {
-  display: block;
-
-  width: 26px;
-  height: 2px;
-
-  background: white;
-
-  transition: 0.3s ease;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-  .container {
-    width: 100%;
-    min-height: 70px;
-
-    padding: 0 20px;
-
-    position: relative;
-
-    justify-content: space-between;
-  }
-
-  .navbar-logo h1 {
-    font-size: 24px;
-    letter-spacing: 2px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  /* MENU */
-
-  .navbar__nav {
-    position: fixed;
-
-    top: 70px;
-    left: 0;
-
-    width: 100%;
-
-    min-height: calc(100vh - 70px);
-
-    padding: 60px 30px;
-
-    background: rgba(3, 3, 10, 0.97);
-
-    backdrop-filter: blur(15px);
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: flex-start;
-
-    gap: 35px;
-
-    transform: translateX(100%);
-
-    transition: transform 0.4s ease;
-
-    z-index: 99;
-  }
-
-  .navbar__nav.open {
-    transform: translateX(0);
-  }
-
-  .navbar__nav a {
-    color: white;
-
-    font-family: 'Unica One', sans-serif;
-
-    font-size: 18px;
-
-    letter-spacing: 4px;
-
-    text-decoration: none;
-
-    transition:
-      color 0.3s ease,
-      transform 0.3s ease;
-  }
-
-  .navbar__nav a:hover {
-    color: #aaa2ff;
-
-    transform: translateX(5px);
-  }
-
-  /* HAMBURGER → X */
-
-  .hamburger.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}
-
-.praxis-img {
-  height: 50px;
-}
-
 .club-page {
   width: 100%;
   overflow: hidden;
@@ -3462,11 +3252,13 @@ a {
     min-height: 250px;
   }
 }
-/* =========================
+
+/* =========================================
    NAVBAR
-========================= */
+========================================= */
 
 .navbar {
+  background-color: #0c0a18;
   width: 100%;
   min-height: 90px;
   padding: 0 5%;
@@ -3475,11 +3267,12 @@ a {
   gap: 30px;
   position: relative;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
-/* =========================
-   PRAXIS
-========================= */
+/* =========================================
+   PRAXIS LOGO
+========================================= */
 
 .navbar-praxis {
   display: flex;
@@ -3488,44 +3281,48 @@ a {
 }
 
 .praxis-img {
-  width: 85px;
+  width: 80px;
   height: auto;
+  display: block;
   object-fit: contain;
 }
 
-/* =========================
+/* =========================================
    ASTROGRAVIA
-========================= */
+========================================= */
 
 .navbar-brand {
   flex-shrink: 0;
 }
 
 .astrogravia-logo {
-  color: inherit;
+  color: white;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-family: 'Megrim', sans-serif;
+  font-size: 1.45rem;
   letter-spacing: 0.08em;
-  font-weight: 500;
+  white-space: nowrap;
 }
 
-/* =========================
-   DESKTOP NAV
-========================= */
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
 
 .navbar__nav {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
-  flex: 1;
+  gap: 24px;
 }
 
 .navbar__nav a {
-  color: inherit;
+  color: white;
   text-decoration: none;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
+  font-family: 'Unica One', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
   transition: opacity 0.3s ease;
 }
 
@@ -3533,20 +3330,23 @@ a {
   opacity: 0.5;
 }
 
-/* =========================
-   EMAIL
-========================= */
+/* =========================================
+   PRAXIS EMAIL
+========================================= */
 
 .navbar-partners {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-email {
-  color: inherit;
+  color: white;
   text-decoration: none;
-  font-size: 0.65rem;
-  letter-spacing: 0.04em;
-  opacity: 0.7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  opacity: 0.65;
+  white-space: nowrap;
   transition: opacity 0.3s ease;
 }
 
@@ -3554,59 +3354,85 @@ a {
   opacity: 1;
 }
 
-/* =========================
+/* =========================================
    MOBILE BUTTON
-========================= */
+========================================= */
 
 .mobile-menu-button {
   display: none;
   width: 42px;
   height: 42px;
   padding: 8px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
   margin-left: auto;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .mobile-menu-button span {
-  display: block;
   width: 25px;
   height: 1px;
-  background: currentColor;
-  transition: all 0.3s ease;
+
+  display: block;
+
+  background: white;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
-/* =========================
+/* =========================================
+   HAMBURGER → X
+========================================= */
+
+.mobile-menu-button.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu-button.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-button.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* =========================================
    MOBILE MENU
-========================= */
+========================================= */
 
 .mobile-nav {
   display: none;
 }
 
-/* =========================
+/* =========================================
    TABLET
-========================= */
+========================================= */
 
 @media (max-width: 1100px) {
   .navbar {
-    gap: 20px;
+    gap: 18px;
   }
 
   .navbar__nav {
-    gap: 16px;
+    gap: 15px;
   }
 
   .navbar__nav a {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
   }
 
   .navbar-email {
-    font-size: 0.58rem;
+    font-size: 0.55rem;
   }
 
   .praxis-img {
@@ -3614,30 +3440,42 @@ a {
   }
 }
 
-/* =========================
+/* =========================================
    MOBILE
-========================= */
+========================================= */
 
 @media (max-width: 800px) {
   .navbar {
     min-height: 75px;
-    padding: 0 6%;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
   }
 
   /* PRAXIS */
 
   .praxis-img {
-    width: 65px;
+    width: 60px;
   }
 
   /* ASTROGRAVIA */
 
-  .astrogravia-logo {
-    font-size: 1.1rem;
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  /* Hide desktop navigation */
+  .astrogravia-logo {
+    font-size: 1.05rem;
+  }
+
+  /* HIDE DESKTOP */
 
   .navbar__nav {
     display: none;
@@ -3647,65 +3485,108 @@ a {
     display: none;
   }
 
-  /* Show hamburger */
+  /* HAMBURGER */
 
   .mobile-menu-button {
     display: flex;
   }
 
-  /* MOBILE MENU */
+  /* MOBILE NAV */
 
   .mobile-nav {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+
+    top: 75px;
     left: 0;
+
     width: 100%;
-    padding: 35px 7% 45px;
+    height: calc(100vh - 75px);
+
+    padding: 35px 30px;
+
+    box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
-    gap: 0;
 
-    background: inherit;
+    background: rgba(3, 3, 10, 0.98);
+    backdrop-filter: blur(18px);
 
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-15px);
+    transform: translateX(100%);
 
-    transition:
-      opacity 0.3s ease,
-      transform 0.3s ease,
-      visibility 0.3s ease;
+    transition: transform 0.35s ease;
+
+    z-index: 999;
   }
 
   .mobile-nav.open {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   /* MOBILE LINKS */
 
   .mobile-nav a {
-    color: inherit;
+    color: white;
     text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.12em;
-    padding: 17px 0;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-family: 'Unica One', sans-serif;
+    font-size: 1rem;
+
+    letter-spacing: 0.15em;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+    transition:
+      opacity 0.3s ease,
+      padding-left 0.3s ease;
+  }
+
+  .mobile-nav a:hover {
+    opacity: 0.55;
+    padding-left: 8px;
   }
 
   /* EMAIL */
 
   .mobile-nav .mobile-email {
-    margin-top: 25px;
-    padding: 15px 0;
-
-    font-size: 0.7rem;
-    letter-spacing: 0.04em;
+    margin-top: auto;
 
     border-bottom: none;
-    opacity: 0.6;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65rem;
+
+    letter-spacing: 0.04em;
+
+    opacity: 0.55;
+  }
+}
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 420px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .praxis-img {
+    width: 55px;
+  }
+
+  .astrogravia-logo {
+    font-size: 0.95rem;
+  }
+
+  .mobile-nav {
+    padding: 25px 25px;
+  }
+
+  .mobile-nav a {
+    font-size: 0.9rem;
+    padding: 17px 0;
   }
 }
