@@ -134,7 +134,7 @@ export const photographs = [
     photographer: 'Irina Bojkovska',
     year: 2026,
     category: 'Nature',
-    image: '/public/irina.jpeg',
+    image: '/irina.jpeg',
     description:
       'A quiet moment on Lake Kerkini, where a small boat moves across the calm waters surrounded by the beauty of nature. The photograph captures the peaceful atmosphere of the lake and the connection between people and the landscape.',
   },
@@ -145,7 +145,7 @@ export const photographs = [
     photographer: 'Maria Sok Khin Nazzaro',
     year: 2026,
     category: 'Curiosity',
-    image: '/public/sok.jpeg',
+    image: '/sok.jpeg',
     description:
       'A curious look at the cannons, capturing a moment of discovery and fascination with the traces of history that surround us.',
   },
@@ -156,7 +156,7 @@ export const photographs = [
     photographer: 'Faustine Yvanne Bague',
     year: 2022,
     category: 'City',
-    image: '/public/faustine.jpeg',
+    image: '/faustine.jpeg',
     description:
       'A colorful night scene of a small urban bar glowing under bright red neon lights.',
   },
@@ -167,7 +167,7 @@ export const photographs = [
     photographer: 'Faustine Yvanne Bague',
     year: 2024,
     category: 'Message',
-    image: '/public/faustinw2.jpeg',
+    image: '/faustinw2.jpeg',
     description:
       'A black and white street photograph caprturing a passerby aproaching a man holding a striking religious message.',
   },
