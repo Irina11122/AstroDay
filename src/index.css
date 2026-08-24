@@ -3332,7 +3332,7 @@ a {
   position: absolute;
 
   left: 50%;
-  top: 35px;
+  top: 0;
 
   transform: translateX(-50%);
 
@@ -3507,9 +3507,18 @@ a {
 
 @media (max-width: 1200px) and (min-width: 801px) {
   .navbar {
-    min-height: 135px;
+    padding: 0 16px;
+    position: fixed;
 
-    padding: 0 25px;
+    top: 10%;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 75px;
+    min-height: 75px;
+
+    inset: auto;
   }
 
   /* PRAXIS */
@@ -3537,7 +3546,7 @@ a {
   /* ASTROWORLD */
 
   .navbar-brand {
-    top: 32px;
+    top: 0;
   }
 
   .astrogravia-logo {
@@ -3577,7 +3586,7 @@ a {
     padding: 0 16px;
     position: fixed;
 
-    top: 0;
+    top: 10%;
     left: 0;
     right: 0;
 
@@ -3644,7 +3653,7 @@ a {
     position: absolute;
 
     left: 50%;
-    top: 35px;
+    top: 0;
 
     transform: translateX(-50%);
 
@@ -3820,9 +3829,17 @@ a {
 @media (max-width: 420px) {
   .navbar {
     padding: 0 16px;
+    position: fixed;
 
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
     height: 75px;
     min-height: 75px;
+
+    inset: auto;
   }
 
   /* PRAXIS */
@@ -4067,7 +4084,7 @@ a {
   .navbar-brand {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 0;
 
     transform: translate(-50%, -50%);
 
