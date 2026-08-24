@@ -3588,15 +3588,15 @@ a {
     inset: auto;
   }
 
-  /* =======================================================
-     PRAXIS MOBILE
-  ======================================================= */
+  /* =========================================================
+   PRAXIS LOGO
+========================================================= */
 
   .navbar-praxis {
-    position: relative;
+    position: absolute;
 
-    left: auto;
-    top: auto;
+    left: 5%;
+    top: 22px;
 
     display: flex;
     align-items: center;
@@ -3605,166 +3605,213 @@ a {
   }
 
   .navbar-praxis .praxis-img {
-    width: 60px;
+    width: 80px;
+    height: auto;
+
+    display: block;
+    object-fit: contain;
   }
 
-  /* =======================================================
-     UNESCO MOBILE
-  ======================================================= */
+  /* =========================================================
+   UNESCO LOGO
+========================================================= */
 
   .navbar-unesco {
-    display: flex;
-
     position: absolute;
 
-    right: 70px;
-    top: 50%;
+    right: 5%;
+    top: 20px;
 
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
 
     z-index: 2;
   }
 
   .navbar-unesco .praxis-img {
-    width: 50px;
+    width: 70px;
+    height: auto;
+
+    display: block;
+    object-fit: contain;
   }
 
-  /* =======================================================
-     ASTROWORLD MOBILE
-  ======================================================= */
+  /* =========================================================
+   ASTROWORLD FOR PRAXIS
+========================================================= */
 
   .navbar-brand {
     position: absolute;
 
     left: 50%;
-    top: 50%;
+    top: 35px;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
 
     z-index: 2;
   }
 
   .astrogravia-logo {
-    font-size: 1rem;
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Megrim', sans-serif;
+
+    font-size: 1.45rem;
+
+    letter-spacing: 0.08em;
 
     white-space: nowrap;
   }
 
-  /* =======================================================
-     HIDE DESKTOP NAV
-  ======================================================= */
-
-  .navbar__nav {
-    display: none;
-  }
-
-  /* =======================================================
-     HIDE EMAIL
-  ======================================================= */
+  /* =========================================================
+   EMAIL
+========================================================= */
 
   .navbar-partners {
-    display: none;
-  }
+    position: absolute;
 
-  /* =======================================================
-     HAMBURGER
-  ======================================================= */
-
-  .mobile-menu-button {
-    display: flex;
-  }
-
-  /* =======================================================
-     MOBILE MENU
-  ======================================================= */
-
-  .mobile-nav {
-    position: fixed;
-
-    top: 75px;
-    left: 0;
-
-    width: 100%;
-    height: calc(100vh - 75px);
-
-    padding: 30px 25px;
-
-    box-sizing: border-box;
+    right: calc(5% + 90px);
+    top: 31px;
 
     display: flex;
+    align-items: center;
 
-    flex-direction: column;
-
-    background: rgba(3, 3, 10, 0.98);
-
-    transform: translateX(100%);
-
-    transition: transform 0.35s ease;
-
-    z-index: 1001;
-
-    overflow-y: auto;
+    z-index: 2;
   }
 
-  /* OPEN MENU */
+  .navbar-email {
+    color: white;
 
-  .mobile-nav.open {
-    transform: translateX(0);
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 0.62rem;
+
+    opacity: 0.65;
+
+    white-space: nowrap;
+
+    transition: opacity 0.3s ease;
   }
 
-  /* =======================================================
-     MOBILE LINKS
-  ======================================================= */
+  .navbar-email:hover {
+    opacity: 1;
+  }
 
-  .mobile-nav a {
-    display: block;
+  /* =========================================================
+   DESKTOP NAVIGATION
+   SECOND ROW
+========================================================= */
 
-    padding: 19px 0;
+  .navbar__nav {
+    position: absolute;
 
+    left: 50%;
+    bottom: 18px;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 26px;
+
+    flex-wrap: nowrap;
+  }
+
+  .navbar__nav a {
     color: white;
 
     text-decoration: none;
 
     font-family: 'Unica One', sans-serif;
 
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 
-    letter-spacing: 0.15em;
+    letter-spacing: 0.12em;
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    white-space: nowrap;
+
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar__nav a:hover {
+    opacity: 0.5;
+  }
+
+  /* =========================================================
+   MOBILE BUTTON
+========================================================= */
+
+  .mobile-menu-button {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    padding: 8px;
+    margin-left: auto;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    z-index: 1002;
+  }
+
+  .mobile-menu-button span {
+    display: block;
+
+    width: 25px;
+    height: 1px;
+
+    background: white;
 
     transition:
-      opacity 0.3s ease,
-      padding-left 0.3s ease;
+      transform 0.3s ease,
+      opacity 0.3s ease;
   }
 
-  .mobile-nav a:hover {
-    opacity: 0.55;
+  /* =========================================================
+   HAMBURGER → X
+========================================================= */
 
-    padding-left: 8px;
+  .mobile-menu-button.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
   }
 
-  /* =======================================================
-     MOBILE EMAIL
-  ======================================================= */
+  .mobile-menu-button.active span:nth-child(2) {
+    opacity: 0;
+  }
 
-  .mobile-nav .mobile-email {
-    margin-top: auto;
+  .mobile-menu-button.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 
-    padding: 15px 0;
+  /* =========================================================
+   MOBILE MENU
+========================================================= */
 
-    border-bottom: none;
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-size: 0.65rem;
-
-    letter-spacing: 0.04em;
-
-    opacity: 0.55;
+  .mobile-nav {
+    display: none;
   }
 }
-
 /* =========================================================
    SMALL PHONES
    420px AND BELOW
